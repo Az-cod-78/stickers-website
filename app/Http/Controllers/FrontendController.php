@@ -22,4 +22,12 @@ class FrontendController extends Controller
     {
         return view('front-end.contact');
     }
+    public function loginRegister()
+    {
+        return view('front-end.login-register');
+    }
+    public function dashboard()
+    {
+        return view('front-end.dashboard');
+    }
 }
