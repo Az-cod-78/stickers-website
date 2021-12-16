@@ -20,3 +20,8 @@ Route::get('store', [FrontendController::class, 'storepage']);
 Route::get('cart', [FrontendController::class, 'cart']);
 Route::get('about', [FrontendController::class, 'about']);
 Route::get('contact', [FrontendController::class, 'contact']);
+Route::get('login-register', [FrontendController::class, 'loginRegister']);
+Route::get('dashboard', [FrontendController::class, 'dashboard']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
