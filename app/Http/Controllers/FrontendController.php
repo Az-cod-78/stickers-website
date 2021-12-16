@@ -22,5 +22,13 @@ class FrontendController extends Controller
     {
         return view('front-end.contact');
     }
+    public function dashboard()
+    {
+        return view('front-end.dashboard');
+    }
+    public function createPage()
+    {
+        return view('front-end.create-page');
+    }
 
 }

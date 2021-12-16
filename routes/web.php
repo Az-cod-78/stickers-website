@@ -23,6 +23,7 @@ Route::get('contact', [FrontendController::class, 'contact']);
 
 Route::get('login-register', [FrontendController::class, 'loginRegister']);
 Route::get('dashboard', [FrontendController::class, 'dashboard']);
+Route::get('create-page', [FrontendController::class, 'createPage'])->name('create');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
