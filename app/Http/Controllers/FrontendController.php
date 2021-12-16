@@ -22,8 +22,5 @@ class FrontendController extends Controller
     {
         return view('front-end.contact');
     }
-        public function createPage()
-    {
-        return view('front-end.create-page');
-    }
+
 }
